@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zestian56/monitoreo-microservice.git"
+    "url": "git+https://github.com/zestian56/SIM-Monitoreo.git"
   },
   "author": "Zestian",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/zestian56/monitoreo-microservice/issues"
+    "url": "https://github.com/zestian56/SIM-Monitoreo/issues"
   },
-  "homepage": "https://github.com/zestian56/monitoreo-microservice#readme",
+  "homepage": "https://github.com/zestian56/SIM-Monitoreo#readme",
   "dependencies": {
     "express": "^4.16.3",
     "helmet": "^3.4.0",
