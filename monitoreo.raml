@@ -1,0 +1,121 @@
+#%RAML 1.0
+title: monitoreo
+version: v1
+baseUri: /
+
+types:
+  Equipo:
+    properties:
+      id_equipo: string
+      nombre_equipo: string
+      ubicacion: ubicacion
+      ip_central: string
+      tipo_equipo: string
+      id_zigbee:
+        required: false
+      cruces: Cruces
+
+  Cruce:
+    properties:
+        codigo: string
+        numero: integer
+        direccion: string
+        modo_operacion: string
+        grupos: Grupos
+        estructuras: Estructuras
+        flujos: Flujos
+  Grupo:
+    properties:
+        numero_grupo: integer
+        nombre_grupo: string
+        tipo_grupo: string
+        color_destello: string
+  Flujo:
+    properties:
+        numero_grupo: integer
+
+
+
+  Estructura:
+    properties:
+        numero_estructura: integer
+        tiempo_rojo: integer
+        tiempo_amarillo: integer
+        planes: Planes
+
+
+  Plan:
+    properties:
+        horarios: Horarios
+        grupos_plan: Grupos_plan
+  Grupo_plan:
+    properties:
+        fases: Fases
+
+  Fase:
+    properties:
+        inicio_rojo_amarillo: integer
+        inicio_verde: integer
+        fin_verde: integer
+        fin_amarillo: integer
+
+  Horario:
+    properties:
+        fecha: integer
+
+  ubicacion:
+    properties:
+          ciudad: string
+          departamento: string
+          direccion: string
+  Cruces:
+    type: Cruce []
+  Grupos:
+    type: Grupo[]
+  Flujos:
+    type: Flujo[]
+  Estructuras:
+    type: Estructura[]
+  Planes:
+    type: Plan[]
+  Grupos_plan:
+    type: Grupo_plan[]
+  Fases:
+    type: Fase[]
+  Horarios:
+    type: Horario[]
+
+resourceTypes:
+  Collecion:
+    get:
+      responses:
+        200:
+          body:
+            application/json:
+              type: <<item>>[]
+
+  Miembro:
+    get:
+      responses:
+        200:
+          body:
+            application/json:
+              type: <<item>>
+    post:
+      body:
+        application/json:
+          type: <<item>>
+  Planes:
+    get:
+      responses:
+        200:
+          body:
+            application/json:
+              type: <<item>>[]
+    post:
+      body:
+        application/json:
+          type: <<item>>[]
+
+/equipo:
+  type:  { Miembro: {item : Equipo } }

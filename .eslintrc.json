@@ -1,0 +1,15 @@
+{
+  "env": {
+    "browser": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 6
+  },
+  "globals": {
+    "exampleGlobalVariable": true
+  },
+  "rules": {
+    "eqeqeq": 1
+  },
+  "plugins": []
+}
