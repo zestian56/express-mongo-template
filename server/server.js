@@ -5,6 +5,12 @@ const start = (options) => {
   return new Promise((resolve, reject) => {
     const app = express()
 
+    if (!options.repo) {
+      reject(new Error('El servidor debe iniciarse con un repositorio conectado'))
+    }
+    if (!options.port) {
+      reject(new Error('El servidor debe iniciarse con un puerto disponible'))
+    }
 
     app.use((err, req, res, next) => {
       reject(new Error('Error!, err:' + err))

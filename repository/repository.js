@@ -1,17 +1,18 @@
 // repository.js
 const repository = (db) => {
-  
-    // since this is the movies-service, we already know
-    // that we are going to query the `movies` collection
-    // in all of our functions.
-    const collection = db.collection('Equipo')
-    // this will close the database connection
+
+    const collection = db.collection('equipo')
+
     const disconnect = () => {
       db.close()
     }
-  
+    const paconic = () =>{
+      console.log("ayylmao")
+    }
+
     return Object.create({
-      disconnect
+      disconnect,
+      paconic
     })
   }
   
@@ -23,5 +24,5 @@ const repository = (db) => {
       resolve(repository(connection))
     })
   }
-  // this only exports a connected repo
+
   module.exports = Object.assign({}, {connect})

@@ -4,7 +4,7 @@ const config = require('./config/')
 const repository = require('./repository/repository')
 const mediator = new EventEmitter()
 
-
+//Lectores de eventos
 process.on('uncaughtException', (err) => {
     console.error('Unhandled Exception', err)
 })
@@ -18,15 +18,24 @@ mediator.on('db.error', (err) => {
 })
 
 mediator.on('db.ready', (db) => {
-    server.start({
-        port: config.serverSettings.port,
-        repo: 1000
+    let rep
+    repository.connect(db).then( repo => {
+        console.log("Conexión finalizada. Iniciando servidor...")
+        rep = repo
+        return server.start({
+            port: config.serverSettings.port,
+            repo: rep
+        })
     }).then(app => {
         console.log("servidor corriendo en " + config.serverSettings.port)
+        app.on('close', () => {
+            rep.disconnect();
+        })
+        
     })
 
 })
 
-
+//finalizar inicio
 config.db.connect(config.dbSettings, mediator)
 mediator.emit('boot.ready')
