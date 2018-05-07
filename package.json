@@ -23,7 +23,8 @@
     "helmet": "^3.4.0",
     "http-status": "^0.2.5",
     "mongodb": "^2.2.35",
-    "morgan": "^1.7.0"
+    "morgan": "^1.7.0",
+    "socket.io": "^2.1.0"
   },
   "devDependencies": {
     "nodemon": "^1.17.3"

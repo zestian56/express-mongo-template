@@ -12,7 +12,7 @@ const serverSettings = {
 }
 
 const socketSettings = {
-  port: process.env.SOCKET_PORT || 1000
+  port: process.env.SOCKET_PORT || 3500
 }
 
-module.exports = Object.assign({}, { dbSettings, serverSettings })
+module.exports = Object.assign({}, { dbSettings, serverSettings, socketSettings})

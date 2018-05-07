@@ -6,13 +6,37 @@ const repository = (db) => {
     const disconnect = () => {
       db.close()
     }
-    const paconic = () =>{
-      console.log("ayylmao")
+    const getEquipo = () =>{
+
+    }
+    const getCruces = () =>{
+      
+    }
+    const getCruceById = (id) =>{
+      
+    }
+    const getGrupos =() =>{
+
+    }
+    const getGrupoById =() =>{
+
+    }
+    const getFlujos = () =>{
+
+    } 
+    const getFlujoById = () =>{
+      
+    } 
+    const getEstructuras = () =>{
+      
+    }
+    const getEstructuraById = () =>{
+      
     }
 
+
     return Object.create({
-      disconnect,
-      paconic
+      disconnect
     })
   }
   
