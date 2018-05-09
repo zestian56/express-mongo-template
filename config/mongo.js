@@ -16,9 +16,7 @@ const connect = (options, mediator) => {
                     mediator.emit('db.error', err)
                 }
                 else {
-
                     mediator.emit('db.ready', db)
-
                 }
             })
     })

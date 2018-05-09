@@ -35,10 +35,6 @@ mediator.on('db.ready', (db) => {
 
     })
 
-    socket.start(config.socketSettings).then(socket => {
-        console.log('Sockets corriendo en :', config.socketSettings.port)
-    })
-
 })
 
 //finalizar inicio
