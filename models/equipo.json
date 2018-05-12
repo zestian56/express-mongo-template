@@ -1,0 +1,178 @@
+{   "estaActivo" : true,
+    "equipo" : {
+        
+        "id_equipo" : "666",
+        "nombre_equipo" : "EcoCOVA666",
+        "ubicacion" : {
+            "ciudad" : "Cali",
+            "departamento" : "Valle del Cauca",
+            "direccion" : "Cra. 1 #2-3"
+        },
+        "ip_central" : "192.168.0.1",
+        "tipo_equipo" : "EcoCOVA",
+        "id_zigbee" : "5F4D12",
+        "cruces" :  [{
+            "codigo" : "568",
+            "numero" : 1,
+            "direccion" : "Cra. 4 #5-6",
+            "modo_operacion" : "Autosincronismo",
+            "grupos" : [{
+                "numero_grupo" : 1,
+                "nombre_grupo" : "Grupo1",
+                "tipo_grupo" : "Vehicular",
+                "color_destello" : "Amarillo"
+            },{
+                "numero_grupo" : 2,
+                "nombre_grupo" : "Grupo2",
+                "tipo_grupo" : "Peatonal",
+                "color_destello" : "Rojo"
+            }],
+            "estructuras" : [{
+                "numero_estructura" : 1,
+                "tiempo_rojo" : 3,
+                "tiempo_amarillo" : 5,
+                "planes" : [{
+                    "horarios" : [{
+                        "fecha" : "2/05/2018"
+                    },{
+                        "fecha" : "3/05/2018"
+                    }],
+                    "grupos_plan" : [{
+                        "fases" : [{
+                            "inicio_rojo_amarillo" : 10,
+                            "inicio_verde" : 13,
+                            "fin_verde": 20,
+                            "fin_amarillo" : 25
+                        },{
+                            "inicio_rojo_amarillo" : 30,
+                            "inicio_verde" : 30,
+                            "fin_verde": 40,
+                            "fin_amarillo" : 45
+                        }]
+                    },
+                    {
+                        "fases" : [{
+                            "inicio_rojo_amarillo" : 46,
+                            "inicio_verde" : 49,
+                            "fin_verde": 55,
+                            "fin_amarillo" : 60
+                        }]
+                    }]
+                },{
+                    "horarios" : [{
+                        "fecha" : "5/05/2018"
+                    },{
+                        "fecha" : "6/05/2018"
+                    }],
+                    "grupos_plan" : [{
+                        "fases" : [{
+                            "inicio_rojo_amarillo" : 10,
+                            "inicio_verde" : 13,
+                            "fin_verde": 20,
+                            "fin_amarillo" : 25
+                        },{
+                            "inicio_rojo_amarillo" : 30,
+                            "inicio_verde" : 30,
+                            "fin_verde": 40,
+                            "fin_amarillo" : 45
+                        }]
+                    },
+                    {
+                        "fases" : [{
+                            "inicio_rojo_amarillo" : 46,
+                            "inicio_verde" : 49,
+                            "fin_verde": 55,
+                            "fin_amarillo" : 60
+                        }]
+                    }]
+                }]
+            },{
+
+            }],
+            "flujos" : [{
+                "paconic_flujo" : "el que es"
+            }]
+        },
+        {
+            "codigo" : "568",
+            "numero" : 1,
+            "direccion" : "Cra. 4 #5-6",
+            "modo_operacion" : "Autosincronismo",
+            "grupos" : [{
+                "numero_grupo" : 1,
+                "nombre_grupo" : "Grupo1",
+                "tipo_grupo" : "Vehicular",
+                "color_destello" : "Amarillo"
+            },{
+                "numero_grupo" : 2,
+                "nombre_grupo" : "Grupo2",
+                "tipo_grupo" : "Peatonal",
+                "color_destello" : "Rojo"
+            }],
+            "estructuras" : [{
+                "numero_estructura" : 1,
+                "tiempo_rojo" : 3,
+                "tiempo_amarillo" : 5,
+                "planes" : [{
+                    "horarios" : [{
+                        "fecha" : "2/05/2018"
+                    },{
+                        "fecha" : "3/05/2018"
+                    }],
+                    "grupos_plan" : [{
+                        "fases" : [{
+                            "inicio_rojo_amarillo" : 10,
+                            "inicio_verde" : 13,
+                            "fin_verde": 20,
+                            "fin_amarillo" : 25
+                        },{
+                            "inicio_rojo_amarillo" : 30,
+                            "inicio_verde" : 30,
+                            "fin_verde": 40,
+                            "fin_amarillo" : 45
+                        }]
+                    },
+                    {
+                        "fases" : [{
+                            "inicio_rojo_amarillo" : 46,
+                            "inicio_verde" : 49,
+                            "fin_verde": 55,
+                            "fin_amarillo" : 60
+                        }]
+                    }]
+                },{
+                    "horarios" : [{
+                        "fecha" : "5/05/2018"
+                    },{
+                        "fecha" : "6/05/2018"
+                    }],
+                    "grupos_plan" : [{
+                        "fases" : [{
+                            "inicio_rojo_amarillo" : 10,
+                            "inicio_verde" : 13,
+                            "fin_verde": 20,
+                            "fin_amarillo" : 25
+                        },{
+                            "inicio_rojo_amarillo" : 30,
+                            "inicio_verde" : 30,
+                            "fin_verde": 40,
+                            "fin_amarillo" : 45
+                        }]
+                    },
+                    {
+                        "fases" : [{
+                            "inicio_rojo_amarillo" : 46,
+                            "inicio_verde" : 49,
+                            "fin_verde": 55,
+                            "fin_amarillo" : 60
+                        }]
+                    }]
+                }]
+            },{
+
+            }],
+            "flujos" : [{},{}]
+        }]
+    }
+
+}

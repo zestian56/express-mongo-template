@@ -1,6 +1,6 @@
 //CLase socket sin utilizar, para montar el servidor de socket
 const express = require('express')
-const api = require('../api/api')
+const api = require('../api/equipo')
 
 const start = (options) => {
   return new Promise((resolve, reject) => {
