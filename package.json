@@ -4,9 +4,9 @@
   "description": "Servicio de monitoreo, controladores de tráfico Solutraffic",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js",
-    "test": "mocha test/**/*.js",
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "mocha -R spec src/**/*.js",
     "build": "npm build ./"
   },
   "repository": {
