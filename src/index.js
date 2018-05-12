@@ -19,7 +19,7 @@ mediator.on('db.error', (err) => {
 })
 
 mediator.on('db.ready', (db) => {
-    let rep
+    let rep;
     repository.connect(db).then(repo => {
         console.log("Conexión finalizada. Iniciando servidor...")
         rep = repo
