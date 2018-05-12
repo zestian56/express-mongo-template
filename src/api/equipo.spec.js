@@ -29,7 +29,7 @@ describe('Api rest de equipo', () => {
         app = null
     })
 
-    it('Se logra extraer la configuración del equipo actual', (done) => {
+    it('Se logro consultar la configuración del equipo actual', (done) => {
         request(app).get('/equipo').expect(200, (err, res) => {
             if (err) { return done(err) }
             isActive = res.body.estaActivo
@@ -37,8 +37,8 @@ describe('Api rest de equipo', () => {
             done()
         })
     })
-    it('Se logra extraer el historial de configuración ',(done) => {
-        request(app).get('/equipo').expect(200, (err, res) => {
+    it('Se logra consultar el historial de configuración ',(done) => {
+        request(app).get('/historial').expect(200, (err, res) => {
             if (err) { return done(err) }           
             done()
          })
