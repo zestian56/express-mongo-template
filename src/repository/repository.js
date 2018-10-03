@@ -9,6 +9,7 @@ const repository = (db) => {
   const getEquipoActivo = () => {
 
     return new Promise((resolve, reject) => {
+      resolve({paco:true,mateo:false})
       const projection = { _id: 0, estaActivo: 0, "equipo.cruces": 0 }
       const sendEquipo = (err, equipo) => {
         if (err) {

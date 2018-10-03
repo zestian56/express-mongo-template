@@ -2,7 +2,7 @@ const MongoClient = require('mongodb')
 
 const getMongoURL = (options) => {
     const url = options.servers
-        .reduce((prev, cur) => prev + `${cur.ip}:${cur.port},`, `mongodb://${options.user}:${options.pass}@`)
+        .reduce((prev, cur) => prev + `${cur.ip}:${cur.port},`, `mongodb://`)
 
     return `${url.substr(0, url.length - 1)}/${options.db}?authSource=admin`
 }

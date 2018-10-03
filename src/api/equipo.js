@@ -3,9 +3,9 @@ const status = require('http-status')
 
 module.exports = (app, options) => {
   const { repo } = options
-  console.log()
 
   app.get('/equipo', (req, res, next) => {
+    
     repo.getEquipoActivo().then(equipo => {
       res.status(status.OK).json(equipo)
     }).catch(next)
