@@ -1,3 +1,2 @@
-Microservicio de monitereo para los controladores de tráfico
+Template para la implementación de servicios rest utilizando mongo y express en nodejs
 
-# Como correrlo
